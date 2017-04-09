@@ -17,5 +17,5 @@ public interface UserService extends BaseService<User> {
 
     void update(User user) throws Exception;
 
-    User findOneById(Serializable id) throws Exception;
+    User findOneById(Serializable id);
 }

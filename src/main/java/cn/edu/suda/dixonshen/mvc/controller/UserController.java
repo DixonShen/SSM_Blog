@@ -2,6 +2,7 @@ package cn.edu.suda.dixonshen.mvc.controller;
 
 import cn.edu.suda.dixonshen.domain.ResponseObj;
 import cn.edu.suda.dixonshen.domain.User;
+import cn.edu.suda.dixonshen.service.UserService;
 import cn.edu.suda.dixonshen.serviceImpl.UserServiceImpl;
 import cn.edu.suda.dixonshen.utils.GsonUtils;
 import cn.edu.suda.dixonshen.utils.StringUtils;
@@ -24,7 +25,7 @@ import javax.servlet.http.HttpServletRequest;
 public class UserController {
 
     @Autowired
-    private UserServiceImpl userService;
+    private UserService userService;
     private ResponseObj responseObj;
 
     /**
